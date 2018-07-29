@@ -19,6 +19,29 @@
 ****************************************************************/
 function pairs(names) {
   // Your code goes here
+  if (!names ){
+    return [];
+  }
+   if(names.length === 0){
+    return [];
+  }
+ if (names.length > 0){
+
+  return [names];
+}
+if (names.length >0){
+  let newArray = []
+  //if index/2 psuh it to the new Array
+  // new array maximum two items
+  while (names.length !== 0){
+    let variable = names.getRandom();
+
+  }
+  console.log(variable);
+
+
+}
+
 }
 
 module.exports = pairs;
@@ -41,4 +64,4 @@ Array.prototype.getRandom = function () {
   return this.splice(Math.floor(Math.random()*this.length), 1)[0];
 }
 
-console.log(pairs(['Asis', 'Hamsa', 'Fawas', 'Mishmish', 'Hussein', 'Lailz', 'Mr Potato']));
+console.log(pairs(['Asis', 'Hamsa','Fawas', 'Mishmish', 'Hussein', 'Lailz', 'Mr Potato']));
